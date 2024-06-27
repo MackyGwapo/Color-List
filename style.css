@@ -1,0 +1,58 @@
+/* Prevents scrolling on the entire page */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Color Card Layout */
+.custom-card {
+    width: 400px; /* Card max width */
+    max-height: 70vh; /* Card max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    direction: rtl; /* Change scroll location to the left */
+}
+
+/* Keeps the content of the card the same even when the scrolling is to the left */
+.custom-card * {
+    direction: ltr;
+}
+
+/* Position Preview Button in the right side of the card */
+.text-right-align {
+    text-align: right;
+}
+
+/* Box Layout */
+.color-box {
+    width: 400px; /* Sets the width of the color box */
+    height: 200px; /* Sets the height of the color box */
+    border: 1px solid #000; /* Adds a 1px black border around the color box */
+    margin: 50px 0 0 20px; /* Adds top margin of 50px and left margin of 20px to the color box */
+}
+
+/* Layout for color info inside the color box */
+#colorInfo {
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: center; /* Centers content horizontally within the color box */
+    align-items: center; /* Centers content vertically within the color box */
+    height: 100%; /* Ensures the content takes up full height of the color box */
+    flex-direction: column; /* Arranges content in a column */
+}
+
+/* Card title positioning */
+.card-title {
+    position: absolute; /* Position the element absolutely relative to its closest positioned ancestor */
+    left: 165px; /* Set the left position of the element to 165 pixels */
+    top: 10px; /* Set the top position of the element to 10 pixels */
+}
+
+/* Card layout */
+.card {
+    margin-top: 50px; /* Set the top margin of the element to 50 pixels */
+}
+
+/* Container layout */
+.container {
+    position: relative; /* Positions the element relatively to itself */
+}
